@@ -1,16 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie-edge">
-    <link rel="stylesheet" href="css/main.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie-edge" />
+    <link rel="stylesheet" href="css/main.css" />
     <title>Tesla Clone - J. Asaolu</title>
-</head>
+  </head>
 
-<body>
-
+  <body>
     <!-- <div class="backdrop"></div>
     <aside>
 <button class="btn btn--close">&times;</button>
@@ -23,262 +21,310 @@
 
     </aside> -->
     <section class="section section--1">
-        <header class="header">
-            <img src="/Media/Logo_white.png" alt="" class="header__logo" />
-            <nav class="header__center">
+      <header class="header">
+        <img src="/Media/Logo_white.png" alt="" class="header__logo" />
+        <nav class="header__center">
+          <button class="btn btn--tertiary">Vehicles</button>
+          <button class="btn btn--tertiary">Energy</button>
+          <button class="btn btn--tertiary">Charging</button>
+          <button class="btn btn--tertiary">Discover</button>
+          <button class="btn btn--tertiary">Shop</button>
+          <button class="btn btn--tertiary">We, Robot</button>
+        </nav>
+        <ol class="header__icons">
+          <li class="header__icons--icon">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="32"
+              height="32"
+              fill="#000000"
+              viewBox="0 0 256 256"
+            >
+              <path
+                d="M140,180a12,12,0,1,1-12-12A12,12,0,0,1,140,180ZM128,72c-22.06,0-40,16.15-40,36v4a8,8,0,0,0,16,0v-4c0-11,10.77-20,24-20s24,9,24,20-10.77,20-24,20a8,8,0,0,0-8,8v8a8,8,0,0,0,16,0v-.72c18.24-3.35,32-17.9,32-35.28C168,88.15,150.06,72,128,72Zm104,56A104,104,0,1,1,128,24,104.11,104.11,0,0,1,232,128Zm-16,0a88,88,0,1,0-88,88A88.1,88.1,0,0,0,216,128Z"
+              ></path>
+            </svg>
+          </li>
+          <li class="header__icons--icon">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="32"
+              height="32"
+              fill="#000000"
+              viewBox="0 0 256 256"
+            >
+              <path
+                d="M128,24h0A104,104,0,1,0,232,128,104.12,104.12,0,0,0,128,24Zm87.62,96H175.79C174,83.49,159.94,57.67,148.41,42.4A88.19,88.19,0,0,1,215.63,120ZM96.23,136h63.54c-2.31,41.61-22.23,67.11-31.77,77C118.45,203.1,98.54,177.6,96.23,136Zm0-16C98.54,78.39,118.46,52.89,128,43c9.55,9.93,29.46,35.43,31.77,77Zm11.36-77.6C96.06,57.67,82,83.49,80.21,120H40.37A88.19,88.19,0,0,1,107.59,42.4ZM40.37,136H80.21c1.82,36.51,15.85,62.33,27.38,77.6A88.19,88.19,0,0,1,40.37,136Zm108,77.6c11.53-15.27,25.56-41.09,27.38-77.6h39.84A88.19,88.19,0,0,1,148.41,213.6Z"
+              ></path>
+            </svg>
+          </li>
 
-                <button class="btn btn--tertiary">Vehicles</button>
-                <button class="btn btn--tertiary">Energy</button>
-                <button class="btn btn--tertiary">Charging</button>
-                <button class="btn btn--tertiary">Discover</button>
-                <button class="btn btn--tertiary">Shop</button>
-                <button class="btn btn--tertiary">We, Robot</button>
-
-            </nav>
-            <ol class="header__icons">
-                <li class="header__icons--icon">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#000000" viewBox="0 0 256 256">
-                        <path
-                            d="M140,180a12,12,0,1,1-12-12A12,12,0,0,1,140,180ZM128,72c-22.06,0-40,16.15-40,36v4a8,8,0,0,0,16,0v-4c0-11,10.77-20,24-20s24,9,24,20-10.77,20-24,20a8,8,0,0,0-8,8v8a8,8,0,0,0,16,0v-.72c18.24-3.35,32-17.9,32-35.28C168,88.15,150.06,72,128,72Zm104,56A104,104,0,1,1,128,24,104.11,104.11,0,0,1,232,128Zm-16,0a88,88,0,1,0-88,88A88.1,88.1,0,0,0,216,128Z">
-                        </path>
-                    </svg>
-                    </svg>
-                </li>
-                <li class="header__icons--icon">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#000000" viewBox="0 0 256 256">
-                        <path
-                            d="M128,24h0A104,104,0,1,0,232,128,104.12,104.12,0,0,0,128,24Zm87.62,96H175.79C174,83.49,159.94,57.67,148.41,42.4A88.19,88.19,0,0,1,215.63,120ZM96.23,136h63.54c-2.31,41.61-22.23,67.11-31.77,77C118.45,203.1,98.54,177.6,96.23,136Zm0-16C98.54,78.39,118.46,52.89,128,43c9.55,9.93,29.46,35.43,31.77,77Zm11.36-77.6C96.06,57.67,82,83.49,80.21,120H40.37A88.19,88.19,0,0,1,107.59,42.4ZM40.37,136H80.21c1.82,36.51,15.85,62.33,27.38,77.6A88.19,88.19,0,0,1,40.37,136Zm108,77.6c11.53-15.27,25.56-41.09,27.38-77.6h39.84A88.19,88.19,0,0,1,148.41,213.6Z">
-                        </path>
-                    </svg>
-                <li class="header__icons--icon">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#000000" viewBox="0 0 256 256">
-                        <path
-                            d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24ZM74.08,197.5a64,64,0,0,1,107.84,0,87.83,87.83,0,0,1-107.84,0ZM96,120a32,32,0,1,1,32,32A32,32,0,0,1,96,120Zm97.76,66.41a79.66,79.66,0,0,0-36.06-28.75,48,48,0,1,0-59.4,0,79.66,79.66,0,0,0-36.06,28.75,88,88,0,1,1,131.52,0Z">
-                        </path>
-                    </svg>
-                </li>
-            </ol>
-        </header>
-        <div class="section section__content">
-            <h1>0% APR Available</h1>
-            <div class="section__button-holder">
-                <button class="btn btn--tertiary">Order Model 3</button>
-                <button class="btn btn--tertiary">Order Model Y</button>
-            </div>
+          <li class="header__icons--icon">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="32"
+              height="32"
+              fill="#000000"
+              viewBox="0 0 256 256"
+            >
+              <path
+                d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24ZM74.08,197.5a64,64,0,0,1,107.84,0,87.83,87.83,0,0,1-107.84,0ZM96,120a32,32,0,1,1,32,32A32,32,0,0,1,96,120Zm97.76,66.41a79.66,79.66,0,0,0-36.06-28.75,48,48,0,1,0-59.4,0,79.66,79.66,0,0,0-36.06,28.75,88,88,0,1,1,131.52,0Z"
+              ></path>
+            </svg>
+          </li>
+        </ol>
+      </header>
+      <div class="section section__content">
+        <h1>0% APR Available</h1>
+        <div class="section__button-holder">
+          <button class="btn btn--tertiary">Order Model 3</button>
+          <button class="btn btn--tertiary">Order Model Y</button>
         </div>
+      </div>
     </section>
     <section class="section section--2">
-        <div class=" section__content">
-            <div class="section__text-holder">
-                <h1>Model Y</h1>
-                <h2><u>0% APR Available</u></h2>
-                <p>Lease Starting at $299/mo</p>
-            </div>
-            <div class="section__button-holder">
-                <button class="btn btn--primary">Order Now</button>
-                <button class="btn btn--tertiary">Learn More</button>
-            </div>
-
+      <div class="section__content">
+        <div class="section__text-holder">
+          <h1>Model Y</h1>
+          <h2><u>0% APR Available</u></h2>
+          <p>Lease Starting at $299/mo</p>
         </div>
-
+        <div class="section__button-holder">
+          <button class="btn btn--primary">Order Now</button>
+          <button class="btn btn--tertiary">Learn More</button>
+        </div>
+      </div>
     </section>
     <section class="section section--3">
-        <div class=" section__content">
-            <div class="section__text-holder">
-                <h1>Model 3</h1>
-                <h2><u>0% APR Available</u></h2>
-                <p>Lease Starting at $299/mo</p>
-            </div>
-            <div class="section__button-holder">
-                <button class="btn btn--primary">Order Now</button>
-                <button class="btn btn--tertiary">Learn More</button>
-            </div>
-
+      <div class="section__content">
+        <div class="section__text-holder">
+          <h1>Model 3</h1>
+          <h2><u>0% APR Available</u></h2>
+          <p>Lease Starting at $299/mo</p>
         </div>
+        <div class="section__button-holder">
+          <button class="btn btn--primary">Order Now</button>
+          <button class="btn btn--tertiary">Learn More</button>
+        </div>
+      </div>
     </section>
     <section class="section section--4">
-        <div class="section section__content">
-            <div class="section__text-holder">
-                <h1>Model X</h1>
-                <h2>0% APR Available</h2>
-                <p><u>After Federal Tax Credit $7,500 <br> and Est. Gas Savings $6,500
-                    </u></p>
-            </div>
-            <div class="section__button-holder">
-                <button class="btn btn--primary">Order Now</button>
-                <button class="btn btn--tertiary">Learn More</button>
-            </div>
-
+      <div class="section section__content">
+        <div class="section__text-holder">
+          <h1>Model X</h1>
+          <h2>0% APR Available</h2>
+          <p>
+            <u
+              >After Federal Tax Credit $7,500 <br />
+              and Est. Gas Savings $6,500
+            </u>
+          </p>
         </div>
+        <div class="section__button-holder">
+          <button class="btn btn--primary">Order Now</button>
+          <button class="btn btn--tertiary">Learn More</button>
+        </div>
+      </div>
     </section>
     <section class="section section--5">
-        <div class="section__content">
-            <div class="section__text-holder">
-                <h1>Model S</h1>
-                <h2><u>%0 APR Available</u></h2>
-                <p>Lease Starting at $299/mo</p>
-            </div>
-            <div class="section__button-holder">
-                <button class="btn btn--primary">Order Now</button>
-                <button class="btn btn--tertiary">Learn More</button>
-            </div>
-
+      <div class="section__content">
+        <div class="section__text-holder">
+          <h1>Model S</h1>
+          <h2><u>%0 APR Available</u></h2>
+          <p>Lease Starting at $299/mo</p>
         </div>
+        <div class="section__button-holder">
+          <button class="btn btn--primary">Order Now</button>
+          <button class="btn btn--tertiary">Learn More</button>
+        </div>
+      </div>
     </section>
     <section class="section section--6">
-        <div class="section__content">
-            <div class="section__text-holder">
-                <img class="section__icon" src="/Media/Cybertrucklogo 1.svg">
-                <h4>LEASE STARTING AT $899/MO</h4>
-            </div>
-            <div class="section__button-holder">
-                <button class="btn btn--cyber">Order Now</button>
-                <button class="btn btn--cyber">Learn More</button>
-            </div>
-
+      <div class="section__content">
+        <div class="section__text-holder">
+          <img class="section__icon" src="/Media/Cybertrucklogo 1.svg" />
+          <h4>LEASE STARTING AT $899/MO</h4>
         </div>
+        <div class="section__button-holder">
+          <button class="btn btn--cyber">Order Now</button>
+          <button class="btn btn--cyber">Learn More</button>
+        </div>
+      </div>
     </section>
     <section class="section section--7">
-        <div class="section__content">
-            <div class="section__text-holder">
-                <h1>Solar Panels</h1>
-                <h2>Schedule a Virtual Consultation</h2>
-            </div>
-            <div class="section__button-holder">
-                <button class="btn btn--primary">Order Now</button>
-                <button class="btn btn--tertiary">Learn More</button>
-            </div>
-
+      <div class="section__content">
+        <div class="section__text-holder">
+          <h1>Solar Panels</h1>
+          <h2>Schedule a Virtual Consultation</h2>
         </div>
+        <div class="section__button-holder">
+          <button class="btn btn--primary">Order Now</button>
+          <button class="btn btn--tertiary">Learn More</button>
+        </div>
+      </div>
     </section>
     <section class="section section--8">
-        <div class="section__content">
-            <div class="section__text-holder">
-                <h1>Solar Roof</h1>
-                <h2>Produce Clean Energy From Your Roof</h2>
-            </div>
-            <div class="section__button-holder">
-                <button class="btn btn--primary">Order Now</button>
-                <button class="btn btn--tertiary">Learn More</button>
-            </div>
-
+      <div class="section__content">
+        <div class="section__text-holder">
+          <h1>Solar Roof</h1>
+          <h2>Produce Clean Energy From Your Roof</h2>
         </div>
+        <div class="section__button-holder">
+          <button class="btn btn--primary">Order Now</button>
+          <button class="btn btn--tertiary">Learn More</button>
+        </div>
+      </div>
     </section>
     <section class="section section--9">
-        <div class="section__content">
-            <div class="section__text-holder">
-                <h1>Powerwall</h1>
-            </div>
-            <div class="section__button-holder">
-                <button class="btn btn--primary">Order Now</button>
-                <button class="btn btn--tertiary">Learn More</button>
-            </div>
-
+      <div class="section__content">
+        <div class="section__text-holder">
+          <h1>Powerwall</h1>
         </div>
+        <div class="section__button-holder">
+          <button class="btn btn--primary">Order Now</button>
+          <button class="btn btn--tertiary">Learn More</button>
+        </div>
+      </div>
     </section>
     <section class="section section--10">
-        <div class="section__content">
-            <div class="section__text-holder">
-                <h1>Accessories</h1>
-            </div>
-            <div class="section__button-holder">
-                <button class="btn btn--primary">Shop Now</button>
-            </div>
+      <div class="section__content">
+        <div class="section__text-holder">
+          <h1>Accessories</h1>
         </div>
+        <div class="section__button-holder">
+          <button class="btn btn--primary">Shop Now</button>
+        </div>
+      </div>
     </section>
-    <section class="section section--11" style="
+    <section
+      class="section section--11"
+      style="
         height: 90vh;
         width: 100%;
         overflow: hidden;
         position: relative;
         background-size: cover;
         background-position: center;
-    ">
-        <!-- Section Content -->
-        <div class="section__content" style="
-            position: absolute;
-            z-index: 2;
-            bottom: 50%; 
-            left: 5%;   
-            top: 50%;;
-            padding: 16px; 
-            color: white;
-            text-align: left;
-        ">
-            <h2>We Are Tesla</h2>
-            <button class="btn btn--tertiary" style="color: black;">Join Tesla</button>
-        </div>
+      "
+    >
+      <!-- Section Content -->
+      <div
+        class="section__content"
+        style="
+          position: absolute;
+          z-index: 2;
+          bottom: 50%;
+          left: 5%;
+          top: 50%;
+          padding: 16px;
+          color: white;
+          text-align: left;
+        "
+      >
+        <h2>We Are Tesla</h2>
+        <button class="btn btn--tertiary" style="color: black">
+          Join Tesla
+        </button>
+      </div>
 
-        <!-- Video Background -->
-        <div class="section__vid-background" style="
-            position: relative; 
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            overflow: hidden;
-            z-index: -1;
-        ">
-            <video autoplay loop muted playsinline style="
-                position: relative;
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%, -50%);
-                width: 100%; /* Ensure video width fills the container */
-                height: 100%; /* Ensure video height fills the container */
-                object-fit: cover; /* Ensures the video fully fills the container */
-            ">
-                <source src="/Media/Homepage-We-Are-Tesla-Desktop.webm" type="video/webm">
-            </video>
-        </div>
+      <!-- Video Background -->
+      <div
+        class="section__vid-background"
+        style="
+          position: relative;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          overflow: hidden;
+          z-index: -1;
+        "
+      >
+        <video
+          autoplay
+          loop
+          muted
+          playsinline
+          style="
+            position: relative;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 100%; /* Ensure video width fills the container */
+            height: 100%; /* Ensure video height fills the container */
+            object-fit: cover; /* Ensures the video fully fills the container */
+          "
+        >
+          <source
+            src="/Media/Homepage-We-Are-Tesla-Desktop.webm"
+            type="video/webm"
+          />
+        </video>
+      </div>
     </section>
+  </body>
 
-
-</body>
-
-<footer class="footer">
+  <footer class="footer">
     <div class="footer footer_div">
-        <p><sup>1</sup> Monthly lease payment excludes taxes and fees, is based on $44,990 Model Y Long Range Rear-Wheel
-            Drive purchase price and is subject to change at any time. Requires $2,999 down with 36 months and 10,000
-            miles. Subject to credit approval and available in select U.S. states. <u>Terms apply.</u></p>
+      <p>
+        <sup>1</sup> Monthly lease payment excludes taxes and fees, is based on
+        $44,990 Model Y Long Range Rear-Wheel Drive purchase price and is
+        subject to change at any time. Requires $2,999 down with 36 months and
+        10,000 miles. Subject to credit approval and available in select U.S.
+        states. <u>Terms apply.</u>
+      </p>
     </div>
     <div class="footer footer_div">
-        <p><sup>2</sup> Monthly lease payment excludes taxes and fees, is based on $42,490 Model 3 Long Range Rear-Wheel
-            Drive purchase price and is subject to change at any time. Requires $2,999 down with 36 months and 10,000
-            miles. Subject to credit approval and available in select U.S. states. <u>Terms apply.</u></p>
+      <p>
+        <sup>2</sup> Monthly lease payment excludes taxes and fees, is based on
+        $42,490 Model 3 Long Range Rear-Wheel Drive purchase price and is
+        subject to change at any time. Requires $2,999 down with 36 months and
+        10,000 miles. Subject to credit approval and available in select U.S.
+        states. <u>Terms apply.</u>
+      </p>
     </div>
     <div class="footer footer_div">
-        <p><sup>3</sup>Price before estimated savings is $81,630, including Destination and Order Fees, but excluding
-            taxes and other fees. Subject to change. Vehicle shown has upgrades that will increase the price. Estimated
-            savings includes $6,500 in <u>gas savings</u> estimated over five years, the $7,500 Federal Tax Credit and
-            state incentives, available to eligible buyers and subject to MSRP caps. Not all vehicles, customers or
-            finance options will be eligible. <u>Terms apply.</u>
-        </p>
+      <p>
+        <sup>3</sup>Price before estimated savings is $81,630, including
+        Destination and Order Fees, but excluding taxes and other fees. Subject
+        to change. Vehicle shown has upgrades that will increase the price.
+        Estimated savings includes $6,500 in <u>gas savings</u> estimated over
+        five years, the $7,500 Federal Tax Credit and state incentives,
+        available to eligible buyers and subject to MSRP caps. Not all vehicles,
+        customers or finance options will be eligible. <u>Terms apply.</u>
+      </p>
     </div>
     <div class="footer footer_div">
-        <p><sup>4</sup> Price before estimated savings is $76,630, including Destination and Order Fees, but excluding
-            taxes and other fees. Subject to change. Vehicle shown has upgrades that will increase the price. Estimated
-            savings includes $6,500 in <u>gas savings</u> estimated over five years and state incentives, available to
-            eligible buyers and subject to MSRP caps. Not all vehicles, customers or finance options will be eligible.
-            <u>Terms apply.</u>
-        </p>
+      <p>
+        <sup>4</sup> Price before estimated savings is $76,630, including
+        Destination and Order Fees, but excluding taxes and other fees. Subject
+        to change. Vehicle shown has upgrades that will increase the price.
+        Estimated savings includes $6,500 in <u>gas savings</u> estimated over
+        five years and state incentives, available to eligible buyers and
+        subject to MSRP caps. Not all vehicles, customers or finance options
+        will be eligible.
+        <u>Terms apply.</u>
+      </p>
     </div>
     <div class="footer footer_div">
-        <p><sup>5</sup> Monthly lease payment excludes taxes and fees, is based on $79,990 Cybertruck All-Wheel Drive
-            purchase price and is subject to change at any time. Requires $7,500 down with 36 months and 10,000 miles.
-            Subject to credit approval and available in select U.S. states. <u>Terms apply.</u></p>
+      <p>
+        <sup>5</sup> Monthly lease payment excludes taxes and fees, is based on
+        $79,990 Cybertruck All-Wheel Drive purchase price and is subject to
+        change at any time. Requires $7,500 down with 36 months and 10,000
+        miles. Subject to credit approval and available in select U.S. states.
+        <u>Terms apply.</u>
+      </p>
     </div>
     <div class="footer footer_div6">
-        <ol>
-            <li>Tesla © 2024</li>
-            <li> Privacy & Legal</li>
-            <li>Vehicle Recalls</li>
-            <li>Contact</li>
-            <li>News</li>
-            <li> Get Updates</li>
-            <li>Locations</li>
-        </ol class="links">
+      <ol class="links">
+        <li>Tesla © 2024</li>
+        <li>Privacy & Legal</li>
+        <li>Vehicle Recalls</li>
+        <li>Contact</li>
+        <li>News</li>
+        <li>Get Updates</li>
+        <li>Locations</li>
+      </ol>
     </div>
-</footer>
-
+  </footer>
 </html>
